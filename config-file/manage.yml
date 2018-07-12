@@ -1,6 +1,6 @@
 server:
   port: 9011
-  context-path: /manage
+  #context-path: /manage
 spring:
   datasource:
     druid:

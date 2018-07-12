@@ -32,3 +32,7 @@ spring:
 management:
   security:
     enabled: false
+
+feign:
+  hystrix:
+    enabled: true
