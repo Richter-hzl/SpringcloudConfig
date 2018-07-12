@@ -4,6 +4,7 @@ zuul:
   routes:
     auth:
       path: /auth/**
+      serviceId: auth
       url: http://auth:9010
       stripPrefix: false
       sensitiveHeaders:
@@ -11,5 +12,13 @@ zuul:
     manage:
       path: /manage/**
       serviceId: manage
+      url: http://manage:9011
+      stripPrefix: false
+      sensitiveHeaders:
+
+    log:
+      path: /log/**
+      serviceId: log
+      url: http://log:9012
       stripPrefix: false
       sensitiveHeaders:

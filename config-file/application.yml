@@ -18,8 +18,17 @@ security:
       scope: server
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
   devtools:
     restart:
       enabled: true
     livereload:
       enabled: true
+
+management:
+  security:
+    enabled: false
